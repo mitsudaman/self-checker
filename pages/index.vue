@@ -11,15 +11,22 @@
       </b-col>
     </b-row>
     {{List}}
+    <b-row class="justify-content-md-center">
+      <b-col cols="8">
+        <chart :param="param"></chart>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
 <script>
 import draggable from 'vuedraggable'
+import Chart from './Chart';
 
 export default {
   components: {
-    draggable
+    draggable,
+    Chart
   },
   data () {
     return {
@@ -37,7 +44,8 @@ export default {
           id: 3
         }
       ],
-      selectedIndex: 0
+      selectedIndex: 0,
+      param: [100, 70, 75, 90, 95]
     }
   }
 }
