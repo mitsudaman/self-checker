@@ -1,33 +1,44 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        self-checker
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <b-container class="bv-example-row mt-5">
+    <b-row class="justify-content-md-center">
+      <b-col cols="5">
+        <draggable v-model="List" group="people" @start="drag=true" @end="drag=false">
+        <b-card v-for="element in List" :key="element.id" class="mb-2">
+          <b-card-text>{{element.text}}
+          </b-card-text>
+        </b-card> 
+      </draggable>
+      </b-col>
+    </b-row>
+    {{List}}
+  </b-container>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import draggable from 'vuedraggable'
 
 export default {
   components: {
-    AppLogo
+    draggable
+  },
+  data () {
+    return {
+      List: [
+        {
+          text: '休み',
+          id: 1
+        },
+        {
+          text: '報酬',
+          id: 2
+        },
+        {
+          text: '健康',
+          id: 3
+        }
+      ],
+      selectedIndex: 0
+    }
   }
 }
 </script>
@@ -35,31 +46,11 @@ export default {
 <style>
 .container {
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
 
