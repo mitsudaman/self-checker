@@ -51,12 +51,10 @@
 
 <script>
 import draggable from 'vuedraggable'
-import Chart from '@/Components/Chart';
 
 export default {
   components: {
     draggable,
-    Chart
   },
   data () {
     return {

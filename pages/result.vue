@@ -16,7 +16,6 @@ import draggable from 'vuedraggable'
 export default {
   components: {
     draggable,
-    Chart
   },
   data () {
     return {
