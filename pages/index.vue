@@ -1,5 +1,5 @@
 <template>
-  <b-container class="mt-5">
+  <b-container class="my-5">
     <h2 class="mb-5">Q.あなたにとって優先度の高い順番で並び替えてください。({{pageIndex}}/4)</h2>
     <template v-if="pageIndex==1">
       <b-row class="justify-content-md-center">
@@ -50,7 +50,7 @@
       </b-row>
     </template>
    <div>
-      <b-row class="justify-content-md-center mt-5">
+      <b-row class="justify-content-md-center mt-3">
         <b-col xs="12" md="5">
           <b-row class="justify-content-md-center">
             <b-col cols="5">
@@ -120,7 +120,7 @@ export default {
           id: 4
         },
         {
-          text: '自分の能力を常に高いレベルに向上できる',
+          text: '能力を高いレベルに向上できる',
           id: 5
         }
       ],
@@ -156,7 +156,7 @@ export default {
           id: 2
         },
         {
-          text: '金銭的なやりがいより精神的なやりがいのある仕事',
+          text: '精神的なやりがいのある仕事',
           id: 3
         },
         {
@@ -164,7 +164,7 @@ export default {
           id: 4
         },
         {
-          text: '退屈でなく刺激のある仕事',
+          text: '退屈ではなく刺激のある仕事',
           id: 5
         }
       ],

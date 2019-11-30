@@ -1,5 +1,5 @@
 export const state = () => ({
-  score: [0,0,0,0,0]
+  score: null
 })
 
 export const mutations = {

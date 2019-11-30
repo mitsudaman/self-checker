@@ -8,7 +8,7 @@ export default {
   data () {
     return {
       data: {
-        labels: ['お金、安定', '自由度', '社会貢献', 'ワークライフバランス', '成長、挑戦'],
+        labels: ['保障・安定', '自律・独立・自由', '社会貢献', 'ワークライフバランス', '成長、挑戦'],
         datasets: [{
           label: '',
           data: this.param,
