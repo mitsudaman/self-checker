@@ -2,7 +2,7 @@
   <b-container class="bv-example-row mt-5">
     <h2 class="mb-5">あなたの価値観は・・・</h2>
     <b-row class="justify-content-md-center">
-      <b-col cols="8">
+      <b-col xs="12" md="6">
         <chart :param="param"></chart>
       </b-col>
     </b-row>
@@ -20,8 +20,7 @@ export default {
   },
   data () {
     return {
-      selectedIndex: 0,
-      param: [100, 70, 75, 90, 95]
+      param: this.$store.state.score
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <b-container class="mt-5">
-    <h2 class="mb-5">Q.あなたにとって優先度の高い順番で並び替えてください。</h2>
+    <h2 class="mb-5">Q.あなたにとって優先度の高い順番で並び替えてください。({{pageIndex}}/4)</h2>
     <template v-if="pageIndex==1">
       <b-row class="justify-content-md-center">
         <b-col xs="12" md="5">
@@ -74,15 +74,15 @@ export default {
       ],
       List2: [
         {
-          text: '地位',
+          text: '休み2',
           id: 1
         },
         {
-          text: '名誉',
+          text: '報酬2',
           id: 2
         },
         {
-          text: '肩書き',
+          text: '健康2',
           id: 3
         }
       ],
@@ -93,15 +93,21 @@ export default {
   methods: {
     back(){
       this.pageIndex -- 
-      console.log(this.pageIndex)
     },
     next(){
       this.pageIndex ++ 
-      console.log(this.pageIndex)
     },
     result(){
       console.log("aaaaa")
+      this.calc(this.List1)
       this.$router.push('result')
+    },
+    calc(list){
+      let arrScore = [0, 0, 0, 90, 95]
+      arrScore[list[0]["id"]-1] += 10
+      arrScore[list[1]["id"]-1] += 5
+      arrScore[list[2]["id"]-1] += 3
+      this.$store.commit('increment',arrScore)
     }
   }
 }
