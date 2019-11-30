@@ -3,7 +3,7 @@
     <h2 class="mb-5">あなたの価値観は・・・</h2>
     <b-row class="justify-content-md-center">
       <b-col cols="8">
-        <chart :param="param"></chart>
+        <!-- <chart :param="param"></chart> -->
       </b-col>
     </b-row>
   </b-container>
@@ -11,7 +11,7 @@
 
 <script>
 import draggable from 'vuedraggable'
-import Chart from '@/Components/Chart';
+// import Chart from '@/Components/Chart';
 
 export default {
   components: {
