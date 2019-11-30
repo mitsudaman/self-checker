@@ -61,7 +61,7 @@ export default {
       this.typeText="安定的に1つの組織に長く属することを望み、キャリアの安定に何よりも関心を持つタイプです。大きな変化を嫌い、ストレスのある職場や仕事を好みません。"
     }
     if(maxScoreIndex==1){
-      this.typeTitle="自律・独立・自由"
+      this.typeTitle="自律・独立"
       this.typeText="独立することを望み、組織に属さず、何事も自分の力でやり遂げようとするタイプです。人の力を借りずに仕事したいと考える一方で、規則や規律に縛られることを好みません。"
     }
     if(maxScoreIndex==2){
