@@ -8,9 +8,9 @@ export default {
   data () {
     return {
       data: {
-        labels: ['強化系', '変質系', '放出系', '操作系', '特質系'],
+        labels: ['お金、安定', '自由度', '社会貢献', 'ワークライフバランス', '成長、挑戦'],
         datasets: [{
-          label: 'Bar Dataset',
+          label: '',
           data: this.param,
           backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
@@ -31,6 +31,13 @@ export default {
         }]
       },
       options: {
+        legend: {
+            display: false,
+            labels:{
+              defaultFontSize: 110,
+               fontColor: 'red'
+            }
+        },
         scale: {
           angleLines: {
             display: false

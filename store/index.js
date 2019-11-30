@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  increment (state,score) {
+  scoring (state,score) {
     state.score = score
   }
 }
