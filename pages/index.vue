@@ -190,23 +190,11 @@ export default {
     },
     calc(list){
       this.arrScore[list[0]["id"]-1] += 25
-      this.arrScore[list[1]["id"]-1] += 20
+      this.arrScore[list[1]["id"]-1] += 21
       this.arrScore[list[2]["id"]-1] += 15
-      this.arrScore[list[3]["id"]-1] += 10
+      this.arrScore[list[3]["id"]-1] += 9
       this.arrScore[list[4]["id"]-1] += 5
     }
   }
 }
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-</style>
-

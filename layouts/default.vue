@@ -16,6 +16,14 @@ html {
   box-sizing: border-box;
 }
 
+.container {
+  min-height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;

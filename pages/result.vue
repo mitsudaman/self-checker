@@ -1,5 +1,5 @@
 <template>
-  <b-container class="bv-example-row mt-5">
+  <b-container class="bv-example-row my-5">
     <h2 class="mb-md-5">あなたの価値観は・・・</h2>
     <b-row class="justify-content-md-center">
       <b-col xs="12" md="7">
@@ -88,15 +88,4 @@ export default {
   }
 }
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-</style>
 
